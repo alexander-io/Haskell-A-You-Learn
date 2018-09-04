@@ -61,3 +61,14 @@ calcSum list = sum list
 
 -- product, takes a list of numbers and returns their product
 calcProduct list = product list
+
+-- using '..' a range of sequential values can be list-ified
+makeListRange x xx = [x..xx]
+-- NOTE to make a  list from  20 -> 1,  you can't just issue [20..1] ...
+-- instead issue [20,19..1]
+
+-- infinite range
+makeInfinListRangeStep x  = [0,x,..]
+
+-- haskell is  lazy, therefore it can take n elements from a range without computing an  infinite  range
+takeNElementsFromRangeXY n x y = take n [x..y]
