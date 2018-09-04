@@ -72,3 +72,12 @@ makeInfinListRangeStep x  = [0,x,..]
 
 -- haskell is  lazy, therefore it can take n elements from a range without computing an  infinite  range
 takeNElementsFromRangeXY n x y = take n [x..y]
+
+-- cycle, takes a list  and cycles  it into an infinite list. if  you try just to display  the result, it will go on forever so you have to sice it off somewhere
+cycleAndTake list n = take n (cycle list)
+
+-- repeat, takes an element and  produces an infinite list  of  just  that element. like cycling a list with only one element
+repeatAndTake rep n = take n (repeat rep)
+
+-- replicate, takes an element and produces an infinite  list of  just  that element. like  cycling a list with only one element
+replicateAndTake rep n = take n (replicate n rep)
