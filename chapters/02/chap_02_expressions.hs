@@ -17,3 +17,10 @@ doubleSmallNumber x = if x > 100
 doubleSmallNumber' x = (if x > 100 then x else x*2) + 1
 
 conanO'Brien = "It's a-me, Conan O'Brien!"
+
+
+-- to retrieve an element from a  list by index use '!!'
+getElem index list = list !! index
+
+-- head takes a list and returns its head
+getHead list = head list
