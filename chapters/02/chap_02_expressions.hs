@@ -113,7 +113,6 @@ boomBangs xs = [ if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x]
 
 -- a  list produced by a comprehension  that  draws from  two lists of length 4 will have a length of 16, provided we don't filter them
 
--- if we have two lists  [2,5,10] and [8,10,11] and we want to  get the products of all the possible combinations between numbers in those lists, here's what we'd do
-
+-- if we have two lists  [2,5,10] and [8,10,11] and we want to  get the products of all the possible combinations between numbers in those lists, here's what we'd do :
 -- [x*y | x <- [2,5,10], y <- [8,10,11]]
 -- [16,20,22,40,50,55,80,100,110]
