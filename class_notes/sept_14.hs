@@ -23,3 +23,12 @@ removeLast (x:xs) = x : (removeLast xs)
 allEven [] = True
 allEven [n] = even n
 allEven (n:ns) = even n && allEven ns
+
+-- more optimistic version
+allEven' [] = True
+allEven' (n:ns) = even n && allEven' ns
+
+allEven'' [] = True
+allEven'' (n:ns)
+  | even n = allEven'' ns
+  | otherwise = False
