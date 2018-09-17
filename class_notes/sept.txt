@@ -1,0 +1,4 @@
+list comprehension
+
+[use | generate, filter]
+[c | (_:_:c) <- ["abc", "def", "ghi"]]
