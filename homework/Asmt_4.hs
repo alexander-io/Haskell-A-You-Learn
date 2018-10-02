@@ -1,0 +1,5 @@
+-- 1. Define the function generalizeToTuples that  takes a one-argument function as input and  generalizes it so that it operates on tuples of inputs instead more specifically, your function should return a new function that performs  the original function but on pairs of values, in which the results being returned in a two-tuple. in the sample output, the  square function is being passed to generalizetoTuples to  produce squarePairs. The resulting function is  shown operating on pairs of values in a two-tuple
+generalizeToTuples fn (a,b) = (fn a, fn b)
+
+-- 2. Define a function stringify that takes a one-argument function and  returns a new function  that produces strings as return values. for example, in the first interaction it produces a modified version of  the square function the returns its results as strings instead of numbers. (E.g. "100" instead of 100). The same is  done for  the function that checks whether its input is 5, and  for the head function.
+stringify fn x = show (fn x)
